@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "dagflows"
+version = "0.7.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a9/e5/623a9e6027554652c0f4680fc96a975652a3edb6e9f506d6b67cc6197776/dagflows-0.7.1.tar.gz", hash = "sha256:ce09221abbb8477ff19f8372e1961e7f17f6ef0f0d32befbb9379b565c0b8198", size = 102982, upload-time = "2026-11-06T22:13:53.302Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/3a/f6a854884a84b26ea2298122077a0cdb68ab44c972b0e0e4532a9a1507fd/dagflows-0.7.1-py3-none-any.whl", hash = "sha256:af02d3d6e53989f3d7f2abdfe35a5a6fd04477380aab13b7a7097f054eb5dbf6", size = 67738, upload-time = "2026-11-06T22:13:51.792Z" },
+]
+
+[[package]]
+name = "split-bill"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "dagflows" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "dagflows", specifier = ">=0.7.1" }]
